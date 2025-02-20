@@ -1,0 +1,59 @@
+<script src=index.js type=module defer></script>
+<link rel=stylesheet href=index.css>
+<link rel=preload href=./loop.svg as=image/>
+<link rel=preload href=./no-repeat.svg as=image/>
+<link rel=preload href=./ping-pong.svg as=image/>
+<div class=scene></div>
+<div class=params>
+    <div class='param param-position'>
+        <div class=param-label>Position</div>
+        <div class=param-filler></div>
+        <div class='param-input param-input1' contenteditable=true>0</div>
+        <div class=param-gap></div>
+        <div class='param-input param-input2' contenteditable=true>0</div>
+    </div>
+    <div class='param param-rotation'>
+        <div class=param-label>Rotation</div>
+        <div class=param-filler></div>
+        <div class=param-input contenteditable=true>0</div>
+    </div>
+    <div class='param param-rotation-center'>
+        <div class=param-label>Rotation Center</div>
+        <div class=param-filler></div>
+        <div class='param-input param-input1' contenteditable=true>0</div>
+        <div class=param-gap></div>
+        <div class='param-input param-input2' contenteditable=true>0</div>
+    </div>
+    <div class='param param-size'>
+        <div class=param-label>Size</div>
+        <div class=param-filler></div>
+        <div class='param-input param-input1' contenteditable=true>0</div>
+        <div class=param-gap></div>
+        <div class='param-input param-input2' contenteditable=true>0</div>
+    </div>
+</div>
+<div class=bottom-pane>
+    <div>
+        <div class=play-pause-button><div></div></div>
+        <div class=filler></div>
+        <div class=stop-button></div>
+        <div class=filler></div>
+        <div class=repeat-mode-button></div>
+    </div>
+    <div class=timeline>
+        <div class=timebar>
+            <div class=timebar-pointer></div>
+        </div>
+        <div class=framebar></div>
+    </div>
+    <div>
+        <div class='animation-duration-input' contenteditable=true>1.0</div>
+        <div class='filler'></div>
+        <div>seconds</div>
+    </div>
+</div>
+<div class='drag-n-drop-overlay hidden'>
+    <div>
+        <div>Drop Your Files Here</div>
+    </div>
+</div>

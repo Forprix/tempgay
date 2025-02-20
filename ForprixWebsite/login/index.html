@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src=../util/rewrite.mjs></script>
+    <link rel="stylesheet" href="./index.css">
+    <script src="https://unpkg.com/@supabase/supabase-js@2"></script>
+    <script type="module" src="./index.mjs" defer=""></script>
+</head>
+<body>
+    <div class=wrapper>
+        <div class="title hidden"></div>
+        <div class=authorization-form>
+            <div class="form1 hidden">
+                <div class=email-input-wrapper>
+                    <div class=input-overlay-1>
+                        <div class=email-input-placeholder>Enter email...</div>
+                    </div>
+                    <div class=input-overlay-2>
+                        <input class=email-input id="email" type="text" autocomplete=email></input>
+                    </div>
+                </div>
+                <div class=password-input-wrapper>
+                    <div class=input-overlay-1>
+                        <div class=password-input-placeholder>Enter password...</div>
+                    </div>
+                    <div class=input-overlay-2>
+                        <input class=password-input id="password" type="text" autocomplete=password></input>
+                    </div>
+                </div>
+                <div class=guide>
+                    <div>1. You write down your email / use new one</div>
+                    <div>2. You write down your password / come up with new one</div>
+                    <div>3. Press Sign In / Create User</div>
+                    <div>4. Go fuck yourself if you can't perform this elementary actions</div>
+                </div>
+                <div class=bottom-wrapper>
+                    <div class=sign-up-button><div>Create User</div></div>
+                    <div class=sign-in-button><div>Sign In</div></div>
+                </div>
+            </div>
+            <div class="form2 hidden">
+                <div class=message-verify-email>
+                    Check your email:
+                </div>
+                <div class=email-reminder></div>
+                <!-- <div class=bottom-wrapper>
+                    <div class=another-email-button><div>Oh shit, I want another email</div></div>
+                    <div class=email-verified-button><div>Verified!</div></div>
+                </div> -->
+            </div>
+            <div class=form3>
+                <div class=form3__title>Authorization</div>
+                <div class=form3__subtitle>Select method below...</div>
+                <div class=form3__auth-icons>
+                    <div class=form3__auth-icons-row>
+                        <div class="auth-icon email-icon"></div>
+                        <div class="auth-icon discord-icon"></div>
+                        <div class="auth-icon google-icon"></div>
+                        <div class="auth-icon github-icon"></div>
+                    </div>
+                    <div class=form3__auth-icons-row>
+                        <div class="auth-icon figma-icon"></div>
+                        <div class="auth-icon gitlab-icon"></div>
+                        <div class="auth-icon facebook-icon"></div>
+                        <div class="auth-icon twitch-icon"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

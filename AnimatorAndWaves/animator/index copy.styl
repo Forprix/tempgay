@@ -1,0 +1,156 @@
+*
+    -webkit-user-drag none
+    user-select none
+    margin 0
+    font-family Consolas
+
+body
+    background #1D1D1D
+.hidden
+    visibility hidden
+
+.drag-n-drop-overlay
+    &.hidden
+        opacity 0
+    opacity 1
+    transition 0.06s ease-out
+    background #0008
+    position fixed
+    width 100%
+    height 100%
+    pointer-events none
+    display flex
+    align-items center
+    justify-content center
+    & > *
+        border solid 2px white
+        width 200px
+        height 200px
+        display flex
+        align-items center
+        justify-content center
+
+.params
+    position fixed
+    right 0
+    top 0
+    padding 7px
+    height 100px
+    background #0F0F0F78
+.param-label
+    color #888
+.param
+    margin 3px
+    display flex
+.param-filler
+    min-width 20px
+    flex-grow 1
+.param-gap
+    min-width 5px
+.param-input
+    color #FFF
+    padding 2px 5px
+    background #0F0F0F
+    border-radius 3px
+
+.scene
+    position fixed
+    left 0
+    right 0
+    top 0
+    bottom 0
+    transform translate(50%, 50%)
+    & > *
+        position absolute
+
+// .resize-helper
+//     display block
+//     position absolute
+//     left 0
+//     top 0
+//     right -10px
+//     bottom -10px
+//     border 5px solid black
+//     transform translate(-5px, -5px)
+
+.bottom-pane
+    display flex
+    position fixed
+    bottom 0
+    background #0002
+    width 100%
+    height 60px
+    & > *:first-child
+        height 100%
+        display flex
+        align-items center
+        padding 0 20px 0 16px
+        & > .filler
+            width 10px
+        & > .play-pause-button
+            &:hover
+                filter drop-shadow(0 0 5px white)
+            width 16px
+            background transparent
+            height 20px
+            & > div
+                width 100%
+                height 100%
+                transition 0.1s ease-out
+                background white
+                clip-path polygon(0 0, 50% 25%, 50% 75%, 50% 75%, 50% 25%, 100% 50%, 100% 50%, 0 100%)
+            &.pause > div
+                clip-path polygon(0 0, 35% 0, 35% 100%, 65% 100%, 65% 0, 100% 0, 100% 100%, 0 100%)
+        & > .stop-button
+            &:hover
+                filter drop-shadow(0 0 5px white)
+            height 18px
+            width 18px
+            margin 1px
+            background white
+        & > .repeat-mode-button
+            &:hover
+                filter drop-shadow(0 0 5px white)
+            height 23px
+            width 23px
+            background center/100% 100% url(./no-repeat.svg)
+    & > *:last-child
+        height 100%
+        display flex
+        align-items center
+        padding 0 16px
+        color #FFF
+        & > .filler
+            width 10px
+        & > .animation-duration-input
+            padding 2px 5px
+            background #0F0F0F
+            border-radius 3px
+    & > .timeline
+        flex-grow 1
+        height 100%
+        display flex
+        flex-direction column
+        justify-content space-evenly
+        & > .timebar
+            position relative
+            background #0005
+            height 20px
+            & > .timebar-pointer
+                position absolute
+                background #fff6
+                width 20px
+                height 20px
+                border-radius 100%
+                transform translateX(-50%)
+        & > .framebar
+            position relative
+            background #0005
+            height 20px
+            & > .framebar-point
+                position absolute
+                background #fff6
+                width 20px
+                height 20px
+                border-radius 100%
+                transform translateX(-50%)

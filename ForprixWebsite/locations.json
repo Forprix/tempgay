@@ -1,0 +1,45 @@
+[
+    {
+        "main": true,
+        "name": "main",
+        "path": "/main",
+        "color": "#C0C0C0",
+        "wip": true
+    },
+    {
+        "name": "music",
+        "path": "/music",
+        "color": "#9599FF"
+    },
+    {
+        "name": "game",
+        "path": "/game",
+        "color": "#9599FF"
+    },
+    {
+        "name": "meme-sounds",
+        "path": "/meme-sounds",
+        "color": "#FF95F4"
+    },
+    {
+        "name": "tetris",
+        "path": "/tetris",
+        "color": "#5ee2ff"
+    },
+    {
+        "name": "chat",
+        "path": "/chat",
+        "color": "#DBFF00",
+        "wip": true
+    },
+    {
+        "name": "keyboard",
+        "path": "/keyboard",
+        "color": "#F08106"
+    },
+    {
+        "name": "test",
+        "path": "/test",
+        "color": "#F08106"
+    }
+]

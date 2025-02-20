@@ -1,0 +1,64 @@
+*
+  margin 0
+  overflow hidden
+
+@font-face
+  font-family 'RobotoThin'
+  src url('/assets/roboto-thin.ttf')
+@font-face
+  font-family 'Roboto'
+  src url('/assets/roboto.ttf')
+@font-face
+  font-family 'Saira'
+  src url('/assets/Saira.ttf')
+  
+.background
+  object-fit cover
+  -webkit-user-drag none
+  user-select none
+
+.message
+  margin-left 22px
+  font-family Roboto
+  font-size 16px
+  
+
+.messages
+  color white
+  display flex
+  flex-direction column
+  position fixed
+  bottom 0px
+  left 0px
+  right 0px
+  padding-bottom 96px
+
+.message-input-wrapper
+  position fixed
+  bottom 0
+  background #1F1F1F
+  height 52px
+  left 22px
+  right 22px
+  bottom 22px
+  outline thick solid #0003
+  border-radius 10px
+  & > .input-overlay-1,
+  & > .input-overlay-2
+    & > div
+      letter-spacing 0.6px
+      font-family: RobotoThin
+      font-size 16px
+      padding 16px
+      border none
+      font-weight 800
+      outline 0px solid transparent
+    position absolute
+    width 100%
+    height 100%
+  & > .input-overlay-1 > div
+    color #989898
+  & > .input-overlay-2 > div
+    color white
+    font-family Roboto
+    font-weight 500

@@ -1,0 +1,79 @@
+<script src=index.js type=module defer></script>
+<link rel=stylesheet href=index.css>
+<svg id=scene-wrapper>
+    <g id=scene transform='scale(1 1)'></g>
+</svg>
+<div id=ui-overlay>
+    <div class=upper-half>
+        <div class=filler></div>
+        <div id=right-side>
+            <div id=params>
+                <div class='param param-position'>
+                    <div class=param-label>Position</div>
+                    <div class=param-filler></div>
+                    <div class='param-input param-input1' contenteditable=true>0</div>
+                    <div class=param-gap></div>
+                    <div class='param-input param-input2' contenteditable=true>0</div>
+                </div>
+                <div class='param param-rotation'>
+                    <div class=param-label>Rotation</div>
+                    <div class=param-filler></div>
+                    <div class=param-input contenteditable=true>0</div>
+                </div>
+                <div class='param param-rotation-center'>
+                    <div class=param-label>Rotation Center</div>
+                    <div class=param-filler></div>
+                    <div class='param-input param-input1' contenteditable=true>0</div>
+                    <div class=param-gap></div>
+                    <div class='param-input param-input2' contenteditable=true>0</div>
+                </div>
+                <div class='param param-size'>
+                    <div class=param-label>Size</div>
+                    <div class=param-filler></div>
+                    <div class='param-input param-input1' contenteditable=true>0</div>
+                    <div class=param-gap></div>
+                    <div class='param-input param-input2' contenteditable=true>0</div>
+                </div>
+                <div class='param param-z-index'>
+                    <div class=param-label>Layer</div>
+                    <div class=param-filler></div>
+                    <div class=param-input contenteditable=true>0</div>
+                </div>
+                <div class='param param-image-index'>
+                    <div class=param-label>Image</div>
+                    <div class=param-filler></div>
+                    <div class=param-input contenteditable=true>0</div>
+                </div>
+            </div>
+            <div>
+                123
+            </div>
+        </div>
+    </div>
+    <div id=bottom-pane>
+        <div>
+            <div id=play-pause-button><div></div></div>
+            <div class=filler></div>
+            <div id=stop-button></div>
+            <div class=filler></div>
+            <div id=repeat-mode-button></div>
+        </div>
+        <div id=timeline>
+            <div id=timebar>
+                <div id=timebar-pointer></div>
+            </div>
+            <div id=framebar></div>
+        </div>
+        <div>
+            <div id=animation-duration-input contenteditable=true>1.0</div>
+            <div class='filler'></div>
+            <div>seconds</div>
+        </div>
+    </div>
+</div>
+
+<div id=drag-n-drop-overlay class=hidden>
+    <div>
+        <div>DROP</div>
+    </div>
+</div>

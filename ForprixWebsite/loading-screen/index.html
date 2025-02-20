@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        @font-face {
+            font-family: 'Saira';
+            src: url('/assets/Saira.ttf');
+        }
+        * {
+            overflow: hidden;
+            margin: 0;
+        }
+        body {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            display: flex;
+        }
+        .title  {
+            font-family: Saira;
+            margin: auto;
+            font-size: 64px;
+            color: white;
+        }
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <div class="title">LOADING</div>
+    <script>
+        const el = document.querySelector('.title')
+        const frame = () => {
+            el.style = `transform: translate(${~~(Math.random() * 20 - 10)}px, ${~~(Math.random() * 20 - 10)}px)`
+            requestAnimationFrame(frame)
+        }
+        requestAnimationFrame(frame)
+    </script>
+</body>
+</html>

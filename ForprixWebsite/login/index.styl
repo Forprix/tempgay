@@ -1,0 +1,261 @@
+*
+  margin 0
+  overflow hidden
+
+body
+  position fixed
+  width 100%
+  height 100%
+
+@font-face
+  font-family 'RobotoThin'
+  src url('/assets/roboto-thin.ttf')
+@font-face
+  font-family 'Roboto'
+  src url('/assets/roboto.ttf')
+@font-face
+  font-family 'Saira'
+  src url('/assets/Saira.ttf')
+
+.wrapper
+  position fixed
+  width 100%
+  height 100%
+  display flex
+  flex-direction column
+  align-items center
+  justify-content center
+
+.title
+  width 847px
+  font-family Consolas
+  color white
+  font-size 40px
+  font-weight 500
+  margin-left 20px
+
+.email-reminder
+  font-family Roboto
+  color white
+  font-size 18px
+  margin-bottom 20px
+  &.clickable
+    color #75b1ff
+    text-decoration underline
+    cursor pointer
+
+.message-verify-email
+  font-family Roboto
+  color white
+  padding 20px 0
+  font-size 30px
+  font-weight 500
+
+.authorization-form
+  width 847px
+  margin-top 30px
+
+.hidden
+  visibility hidden
+  display none
+  width 0
+  height 0
+
+.form3
+  color white
+  font-family Roboto
+  &__title
+    font-size 40px
+    margin-top 22px
+    margin-bottom 14px
+  &__subtitle
+    font-size 20px
+    margin-bottom 22px
+  &__auth-icons
+    margin-bottom 22px
+    display flex
+    align-items center
+    flex-direction column
+  &__auth-icons-row
+    display flex
+    align-items center
+    flex-direction row
+
+.auth-icon
+  user-drag none
+  -webkit-user-drag none
+  user-select none
+  cursor pointer
+  width 95px
+  margin 12px
+  border-radius 22px
+  height 95px
+  background black
+  transition all 0.1s ease-out
+  &:hover
+    transform scale(110%)
+  &.email-icon
+    background #363636 url("./auth-icons/email.svg") center no-repeat
+  &.discord-icon
+    background #5662F6 url("./auth-icons/discord.svg") center no-repeat
+  &.google-icon
+    background #303134 url("./auth-icons/google.svg") center no-repeat
+  &.github-icon
+    background #24292F url("./auth-icons/github.svg") center bottom no-repeat
+  &.figma-icon
+    background #2B2C32 url("./auth-icons/figma.svg") center no-repeat
+  &.gitlab-icon
+    background #1C252C url("./auth-icons/gitlab.svg") center no-repeat
+  &.facebook-icon
+    background #0865FF url("./auth-icons/facebook.svg") center bottom no-repeat
+  &.twitch-icon
+    background #62509C url("./auth-icons/twitch.svg") center bottom 5px no-repeat
+
+.form1, .form2
+  background #363636
+  border-radius 10px
+
+.form1, .form2, .form3
+  display flex
+  align-items center
+  flex-direction column
+
+.form1
+  background-image url(./wow.png)
+  background-size cover
+
+body.form2 .form1
+  visibility hidden
+  display none
+
+body.form1 .form2
+  visibility hidden
+  display none
+
+.input-overlay-1, .input-overlay-2
+  position absolute
+  width 100%
+  height 100%
+  & > div
+    outline none
+    color #666
+    font-family RobotoThin
+    font-weight 700
+    letter-spacing 0.75px
+    font-size 16px
+    width 100%
+    padding-top 16px
+    padding-bottom 16px
+    padding-left 20px
+    padding-right 20px
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus
+  border none
+  outline none
+  -webkit-text-fill-color white
+  -webkit-box-shadow 0 0 0 30px #1F1F1F inset !important
+  font-family Roboto
+  font-size 16px
+  color white
+  caret-color white
+  transition background-color 2147483647s
+
+
+.input-overlay-2 > input
+  font-family Roboto
+  font-size 16px
+  color white
+  background transparent
+  border none
+  outline none
+  width 100%
+  padding-top 16px
+  padding-bottom 16px
+  padding-left 20px
+  padding-right 20px
+
+
+.email-input-wrapper, .password-input-wrapper
+  position relative
+  border-radius 10px
+  margin-top 15px
+  width 817px
+  height 52px
+  background #1F1F1F
+  display flex
+  align-items center
+
+.guide
+  flex-grow 1
+  margin-top 20px
+  margin-bottom 20px
+  & > div
+    margin-left 20px
+  font-family Saira
+  color #878787
+  align-self flex-start
+
+.bottom-wrapper
+  height 50px
+  width 100%
+  display flex
+  flex-direction row
+  padding-bottom 10px
+  & > .sign-in-button,
+  & > .sign-up-button
+    &:hover
+      background #353535
+      border solid #AAA 1px
+    &:active
+      background #111
+      border solid #AAA 1px
+    cursor pointer
+    transition ease-out 0.1s
+    border solid #555 1px
+    border-radius 10px
+    margin 0 10px
+    flex-grow 1
+    display flex
+    align-items center
+    justify-content center
+    background #282828
+    color #C7C7C7
+    font-family Roboto
+    font-size 16px
+
+.email-verified-button,
+.another-email-button
+  &:hover
+    background #353535
+    border solid #AAA 1px
+  &:active
+    background #222
+    border solid #888 1px
+  cursor pointer
+  height 50px
+  width 250px
+  transition ease-out 0.1s
+  border solid #555 1px
+  border-radius 10px
+  margin 0 10px
+  flex-grow 1
+  display flex
+  align-items center
+  justify-content center
+  background #282828
+  color #C7C7C7
+  font-family Roboto
+  font-size 16px
+  margin-bottom 20px
+
+.splashMessage
+  font-family Roboto
+  left 0
+  top 0
+  position fixed
+  z-index 1000
+  color white
+  pointer-events none
+  font-size 32px

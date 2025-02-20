@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src=../util/rewrite.mjs></script>
+    <link rel="stylesheet" href="./index.css">
+    <script src="https://unpkg.com/@supabase/supabase-js@2"></script>
+    <script type="module" src="./index.mjs" defer=""></script>
+</head>
+<body>
+    <image class="background" src="./background.jpg">
+    <div class="messages"></div>
+    <div class=message-input-wrapper>
+        <div class=input-overlay-1>
+            <div class=message-input-placeholder>Enter message...</div>
+        </div>
+        <div class=input-overlay-2>
+            <div contenteditable="true" class="message-input"></div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,1 @@
+deno i && deno run -A --watch --unstable-sloppy-imports ./server/index --ignore ./server/worlds/ --ignore ./client/ --ignore ./build/

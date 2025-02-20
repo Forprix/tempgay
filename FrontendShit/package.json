@@ -1,0 +1,35 @@
+{
+  "dependencies": {
+    "autoprefixer": "^10.4.20",
+    "clean-css": "^5.3.3",
+    "error-stack-parser": "^2.1.4",
+    "esbuild": "^0.25.0",
+    "express": "^4.19.2",
+    "hi": "file:hi",
+    "jquery": "^3.7.1",
+    "node-html-parser": "^6.1.13",
+    "nodemon": "^3.1.0",
+    "postcss": "^8.4.49",
+    "source-map-js": "^1.2.1",
+    "stylus": "^0.64.0",
+    "ws": "^8.16.0"
+  },
+  "name": "gamebomj",
+  "version": "1.0.0",
+  "main": "index.ts",
+  "type": "module",
+  "devDependencies": {
+    "@swc/cli": "^0.3.14",
+    "@swc/core": "^1.10.1",
+    "@types/express": "^4.17.21",
+    "@types/ws": "^8.5.13",
+    "chokidar": "^3.6.0"
+  },
+  "scripts": {
+    "start": "deno run -A --watch --unstable-sloppy-imports ./server/index --ignore ./server/worlds/ --ignore ./client/ --ignore ./build/"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
